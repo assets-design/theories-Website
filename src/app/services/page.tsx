@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
+import { ServicesBento } from "@/components/sections/services/ServicesBento";
 import { ServicesCatalog } from "@/components/sections/services/ServicesCatalog";
 import { ServicesCta } from "@/components/sections/services/ServicesCta";
 import { ServicesHero } from "@/components/sections/services/ServicesHero";
-import { ServicesOverview } from "@/components/sections/services/ServicesOverview";
 
 export const metadata: Metadata = {
   title: "Services — Theories Consulting",
@@ -14,7 +14,7 @@ export default function ServicesPage() {
   return (
     <div className="bg-black">
       <ServicesHero />
-      <ServicesOverview />
+      <ServicesBento />
       <ServicesCatalog />
       <ServicesCta />
     </div>

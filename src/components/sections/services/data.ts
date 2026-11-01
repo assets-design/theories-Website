@@ -24,7 +24,7 @@ export const SERVICES_STAGES: readonly ServiceStage[] = [
     intro:
       "Before anything gets made, it gets decided. Naming, identity, positioning and strategy — the thinking that makes every later choice easier.",
     icon: "/images/icons/service-shaping.png",
-    image: "/images/services2/stage-ai.png",
+    image: "/images/services2/cta-workspace.png",
     imageAlt: "Brand and strategy visual",
     lightPanel: false,
     services: [
