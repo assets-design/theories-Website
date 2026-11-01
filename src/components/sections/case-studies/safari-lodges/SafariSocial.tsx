@@ -440,13 +440,14 @@ export function SafariSocial() {
       aria-label="Social media for Safari Lodges India"
       className="bg-white text-black"
     >
-      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] pt-[clamp(2rem,4.167vw,5rem)] pb-[clamp(2.5rem,5.2vw,6.25rem)]">
+      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1rem,6.875vw,16.25rem)] pt-[clamp(2rem,4.167vw,5rem)] pb-[clamp(2.5rem,5.2vw,6.25rem)]">
+        <div className="mx-auto w-full max-w-[clamp(920px,72.7vw,1396px)]">
         {/*
           Heading + top phone fan — Figma 2062:1275 + 2321:508.
           Aspect 1680×1421 (heading y=1276 → left-card AABB bottom y≈2697).
           Transparent mockups: native <img>, no rectangular box-shadow.
         */}
-        <div className="relative z-10 w-full lg:aspect-[1680/1421] lg:overflow-visible">
+        <div className="relative z-10 w-full lg:aspect-[1680/1421] lg:overflow-hidden">
           <FadeUp className="lg:absolute lg:left-0 lg:top-0 lg:z-10">
             <h2 className="text-h2 leading-[normal] text-black max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
               Social Media For Safari Lodges India
@@ -582,8 +583,8 @@ export function SafariSocial() {
 
         {/* Campaign phone + posts — Figma 2149:759.
             Phone behind cards (z-0); cards ~5.5px gaps like design. */}
-        <div className="relative mt-[clamp(2rem,4.17vw,5rem)] hidden aspect-[1679/1112] w-full lg:block">
-          <FadeUp className="pointer-events-none absolute left-[54.85%] top-0 z-0 flex h-full w-[54.26%] items-center justify-center">
+        <div className="relative mt-[clamp(2rem,4.17vw,5rem)] hidden aspect-[1679/1112] w-full overflow-hidden lg:block">
+          <FadeUp className="pointer-events-none absolute left-1/2 top-0 z-0 flex h-full w-[54.26%] -translate-x-1/2 items-center justify-center">
             <div className="relative aspect-[492/998] w-[54%] rotate-[28.69deg]">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -620,6 +621,7 @@ export function SafariSocial() {
             />
           </div>
         </FadeUp>
+        </div>
       </div>
     </section>
   );

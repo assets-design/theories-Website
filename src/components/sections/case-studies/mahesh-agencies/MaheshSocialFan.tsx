@@ -13,7 +13,8 @@ const FAN_DROP_SHADOW = "drop-shadow-[-30px_0px_4px_rgba(0,0,0,0.25)]";
 export function MaheshSocialFan() {
   return (
     <section aria-label="Social media for Mahesh Agencies" className="bg-white text-black">
-      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] pt-[clamp(2rem,4.167vw,5rem)] pb-[clamp(2rem,4.17vw,5rem)]">
+      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1rem,6.875vw,16.25rem)] pt-[clamp(2rem,4.167vw,5rem)] pb-[clamp(2rem,4.17vw,5rem)]">
+        <div className="mx-auto w-full max-w-[clamp(920px,72.7vw,1396px)]">
         {/*
           Heading + fan — white block starts Figma y=5182.
           Heading y=5262 (pt 80). Fan group 2283:543: 1667.61×1031 @ (120, 5404).
@@ -24,7 +25,7 @@ export function MaheshSocialFan() {
             left    0% / 27.55% / 36.02% / 62.30%
             right  63.98% / 13.00% / 36.02% / 62.30%
         */}
-        <div className="relative z-10 w-full lg:aspect-[1920/1253] lg:overflow-visible">
+        <div className="relative z-10 w-full lg:aspect-[1920/1253] lg:overflow-hidden">
           <FadeUp className="lg:absolute lg:left-0 lg:top-0 lg:z-10">
             <h2 className="text-h2 leading-[1.1875] text-black max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
               Social Media For Mahesh Agencies
@@ -81,6 +82,7 @@ export function MaheshSocialFan() {
             draggable={false}
           />
         </FadeUp>
+        </div>
       </div>
     </section>
   );

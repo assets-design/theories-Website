@@ -116,7 +116,8 @@ function InstagramReelCard({ src, label }: { src: string; label: string }) {
 export function ZeneSocial() {
   return (
     <section aria-label="Social media for Zene AI" className="bg-white text-black">
-      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] pt-[clamp(2rem,4.167vw,5rem)] pb-[clamp(2.5rem,5.2vw,6.25rem)]">
+      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1rem,6.875vw,16.25rem)] pt-[clamp(2rem,4.167vw,5rem)] pb-[clamp(2.5rem,5.2vw,6.25rem)]">
+        <div className="mx-auto w-full max-w-[clamp(920px,72.7vw,1396px)]">
         <FadeUp>
           <h2 className="text-h2 leading-[normal] text-black max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
             Social Media For Zene AI
@@ -147,6 +148,7 @@ export function ZeneSocial() {
               <InstagramReelCard {...reel} />
             </FadeUp>
           ))}
+        </div>
         </div>
       </div>
     </section>

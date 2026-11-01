@@ -34,7 +34,8 @@ const FEED_DROP_SHADOW = "drop-shadow-[-30px_0px_4px_rgba(0,0,0,0.25)]";
 export function MaheshSocialFeed() {
   return (
     <section aria-label="Mahesh Agencies social feed phones" className="bg-white">
-      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] pb-[clamp(2rem,4.17vw,5rem)]">
+      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1rem,6.875vw,16.25rem)] pb-[clamp(2rem,4.17vw,5rem)]">
+        <div className="mx-auto w-full max-w-[clamp(920px,72.7vw,1396px)]">
         <div className="relative mx-auto hidden aspect-[1710/755] w-full max-w-[clamp(40rem,89.06vw,106.875rem)] lg:block">
           {feedPhones.map((phone, index) => (
             <FadeUp
@@ -69,6 +70,7 @@ export function MaheshSocialFeed() {
               />
             </div>
           ))}
+        </div>
         </div>
       </div>
     </section>

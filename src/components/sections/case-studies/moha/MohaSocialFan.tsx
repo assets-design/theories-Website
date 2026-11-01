@@ -15,7 +15,8 @@ const FAN_DROP_SHADOW = "drop-shadow-[-30px_0px_4px_rgba(0,0,0,0.25)]";
 export function MohaSocialFan() {
   return (
     <section aria-label="Social media for MoHa" className="bg-white text-black">
-      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] pt-[clamp(2rem,4.167vw,5rem)] pb-[clamp(2.5rem,5.2vw,6.25rem)]">
+      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1rem,6.875vw,16.25rem)] pt-[clamp(2rem,4.167vw,5rem)] pb-[clamp(2.5rem,5.2vw,6.25rem)]">
+        <div className="mx-auto w-full max-w-[clamp(920px,72.7vw,1396px)]">
         {/*
           Combined heading + fan — Figma 2250:519 (1920×1256).
           Section pt 80px = heading y=80. Aspect box height 1176 = 1256−80.
@@ -24,7 +25,7 @@ export function MohaSocialFan() {
           Rotated AABB tops (design_context): center/right @ group top,
           left @ +261px (26.69%). Unrotated metadata y must not be used.
         */}
-        <div className="relative z-10 w-full lg:aspect-[1920/1176] lg:overflow-visible">
+        <div className="relative z-10 w-full lg:aspect-[1920/1176] lg:overflow-hidden">
           <FadeUp className="lg:absolute lg:left-0 lg:top-0 lg:z-10">
             <h2 className="text-h2 leading-[1.1875] text-black max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
               Social Media For MOHA
@@ -83,6 +84,7 @@ export function MohaSocialFan() {
             draggable={false}
           />
         </FadeUp>
+        </div>
       </div>
     </section>
   );

@@ -99,7 +99,8 @@ function StoryColumn({
 export function MaheshSocialStories() {
   return (
     <section aria-label="Mahesh Agencies Instagram stories" className="bg-white text-black">
-      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] pt-[clamp(1rem,2vw,2.5rem)] pb-[clamp(3rem,6.25vw,7.5rem)]">
+      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1rem,6.875vw,16.25rem)] pt-[clamp(1rem,2vw,2.5rem)] pb-[clamp(3rem,6.25vw,7.5rem)]">
+        <div className="mx-auto w-full max-w-[clamp(920px,72.7vw,1396px)]">
         {/* Desktop — 3 columns; Figma gaps ≈207px @ 1920 */}
         <div className="hidden justify-center gap-[clamp(1rem,10.81vw,12.875rem)] lg:flex">
           {storyCards.map((card, index) => (
@@ -128,6 +129,7 @@ export function MaheshSocialStories() {
               />
             </div>
           ))}
+        </div>
         </div>
       </div>
     </section>

@@ -30,7 +30,8 @@ const mythPhones = [
 export function MaheshSocialMyth() {
   return (
     <section aria-label="Mahesh Agencies social product phones" className="bg-white">
-      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] pb-[clamp(2rem,4.17vw,5rem)]">
+      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1rem,6.875vw,16.25rem)] pb-[clamp(2rem,4.17vw,5rem)]">
+        <div className="mx-auto w-full max-w-[clamp(920px,72.7vw,1396px)]">
         <div className="relative mx-auto hidden aspect-[1132/726] w-full max-w-[clamp(28rem,58.96vw,70.75rem)] lg:block">
           {mythPhones.map((phone, index) => (
             <FadeUp
@@ -65,6 +66,7 @@ export function MaheshSocialMyth() {
               />
             </div>
           ))}
+        </div>
         </div>
       </div>
     </section>

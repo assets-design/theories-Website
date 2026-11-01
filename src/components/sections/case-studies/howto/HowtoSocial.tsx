@@ -305,13 +305,14 @@ export function HowtoSocial() {
 
   return (
     <section aria-label="Social media for How To" className="bg-white text-black">
-      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] pt-[clamp(2rem,4.167vw,5rem)] pb-[clamp(2.5rem,5.2vw,6.25rem)]">
+      <div className="mx-auto w-full max-w-[1920px] px-4 pt-[clamp(2rem,4.167vw,5rem)] pb-[clamp(2.5rem,5.2vw,6.25rem)] lg:px-[clamp(1rem,6.875vw,16.25rem)]">
+        <div className="mx-auto w-full max-w-[clamp(920px,72.7vw,1396px)]">
         {/*
           Heading + fan — white group y=5802; heading y=5882 (80px).
           Fan AABB box from design_context: 124×6038 → 1799.6×7062 (1675.6×1023.9).
           Heading→fan gap 156px within content aspect 1680×(76+156+1024)=1256.
         */}
-        <div className="relative z-10 w-full lg:aspect-[1680/1256] lg:overflow-visible">
+        <div className="relative z-10 w-full lg:aspect-[1680/1256] lg:overflow-hidden">
           <FadeUp className="lg:absolute lg:left-0 lg:top-0 lg:z-10">
             <h2 className="text-h2 leading-[normal] text-black max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
               Social Media For How To
@@ -321,9 +322,13 @@ export function HowtoSocial() {
           {/* Fan group — rotated AABB % of 1675.61×1023.8 starting under heading */}
           <FadeUp
             delay={40}
-            className="pointer-events-none absolute inset-0 hidden overflow-visible lg:block"
+            className="pointer-events-none absolute inset-0 hidden overflow-hidden lg:block"
           >
-            <div className="absolute left-0 top-[18.47%] h-[81.53%] w-full">
+            {/* Inset fan stage so mockups stay inside header-aligned bounds */}
+            <div
+              className="absolute"
+              style={{ left: "6.25%", top: "18.47%", height: "81.53%", width: "87.5%" }}
+            >
               {/* Left card AABB — top 27.64% of fan */}
               <div className="absolute left-0 top-[27.64%] z-10 h-[62.7%] w-[35.84%]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -415,11 +420,10 @@ export function HowtoSocial() {
         </div>
 
         {/* Overlap phone + 5 cards — Figma 2247:979 (1679×1062).
-            Phone AABB 2247:970 (833×0 → 901.57×1062.34) behind cards (z-0);
-            unrotated 941×1672 export + CSS rotate 28.69°.
-            Cards group 2247:978 top 499/1062.34 = 46.97% (phone extends above/below). */}
-        <div className="relative mt-[clamp(2rem,4.17vw,5rem)] hidden aspect-[1679/1062] w-full lg:block">
-          <FadeUp className="pointer-events-none absolute left-[49.61%] top-0 z-0 flex h-full w-[53.7%] items-center justify-center">
+            Phone centered on stage (was left 49.61% / looking right-biased);
+            CSS rotate 28.69°. Cards @ top 46.97%. */}
+        <div className="relative mt-[clamp(2rem,4.17vw,5rem)] hidden aspect-[1679/1062] w-full overflow-hidden lg:block">
+          <FadeUp className="pointer-events-none absolute left-1/2 top-0 z-0 flex h-full w-[53.7%] -translate-x-1/2 items-center justify-center">
             <div className="relative aspect-[941/1672] w-[57.8%] rotate-[28.69deg]">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -483,6 +487,7 @@ export function HowtoSocial() {
 
         <div className="mt-[clamp(1.5rem,4vw,3rem)] lg:hidden">
           <HorizontalCarousel items={mobileItems} ariaLabel="How To social media pagination" />
+        </div>
         </div>
       </div>
     </section>

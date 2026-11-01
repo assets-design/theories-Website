@@ -83,7 +83,8 @@ function PortraitTile({ src, alt, aspect }: { src: string; alt: string; aspect: 
 export function MohaSocialCampaign() {
   return (
     <section aria-label="MoHa social media campaign" className="bg-white text-black">
-      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] pb-[clamp(2.5rem,5.2vw,6.25rem)]">
+      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1rem,6.875vw,16.25rem)] pb-[clamp(2.5rem,5.2vw,6.25rem)]">
+        <div className="mx-auto w-full max-w-[clamp(920px,72.7vw,1396px)]">
         {/* Row 1 — teaser carousel exports; Figma gap 27px @ 1680 content width */}
         <div className="hidden gap-[clamp(0.75rem,1.406vw,1.6875rem)] lg:grid lg:grid-cols-4">
           {teaserPosts.map((post, index) => (
@@ -147,6 +148,7 @@ export function MohaSocialCampaign() {
               </div>
             ))}
           </div>
+        </div>
         </div>
       </div>
     </section>

@@ -404,13 +404,14 @@ export function LohithaSocial() {
 
   return (
     <section aria-label="Social media for Lohitha" className="bg-white text-black">
-      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] pt-[clamp(2rem,4.167vw,5rem)] pb-[clamp(2.5rem,5.2vw,6.25rem)]">
+      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1rem,6.875vw,16.25rem)] pt-[clamp(2rem,4.167vw,5rem)] pb-[clamp(2.5rem,5.2vw,6.25rem)]">
+        <div className="mx-auto w-full max-w-[clamp(920px,72.7vw,1396px)]">
         {/*
           Heading + phone fan — Figma 2195:527 (1677.59×1080.65) inside 2195:533.
           Phone tops use rotated AABB from design_context (not unrotated metadata y):
           heading bottom y=1352 → center phone AABB top y=1359.48 → ~7.5px gap.
         */}
-        <div className="relative z-10 w-full lg:aspect-[1678/1081] lg:overflow-visible">
+        <div className="relative z-10 w-full lg:aspect-[1678/1081] lg:overflow-hidden">
           <FadeUp className="lg:absolute lg:left-0 lg:top-0 lg:z-10">
             <h2 className="text-h2 leading-[normal] text-black max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
               Social Media For Lohitha
@@ -709,6 +710,7 @@ export function LohithaSocial() {
             />
           </div>
         </FadeUp>
+        </div>
       </div>
     </section>
   );

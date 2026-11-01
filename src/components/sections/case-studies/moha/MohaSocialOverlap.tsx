@@ -75,7 +75,8 @@ function StoryProgress({ activeIndex }: { activeIndex: 0 | 1 }) {
 export function MohaSocialOverlap() {
   return (
     <section aria-label="MoHa social media overlap" className="bg-white text-black">
-      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] pb-[clamp(2.5rem,5.2vw,6.25rem)]">
+      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1rem,6.875vw,16.25rem)] pb-[clamp(2.5rem,5.2vw,6.25rem)]">
+        <div className="mx-auto w-full max-w-[clamp(920px,72.7vw,1396px)]">
         {/* Desktop — single aspect frame matching Figma 2250:533 */}
         <div className="relative hidden w-full lg:block lg:aspect-[1920/1849]">
           {/* Top overlap fan — Figma 2250:524 @ y=151 within section */}
@@ -166,6 +167,7 @@ export function MohaSocialOverlap() {
               </FadeUp>
             ))}
           </div>
+        </div>
         </div>
       </div>
     </section>
