@@ -6,7 +6,8 @@ import { FadeUp } from "@/components/motion/FadeUp";
 export function SafariLanding() {
   return (
     <section aria-label="Safari Lodges India website" className="bg-black text-white">
-      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] py-[clamp(2.5rem,4.17vw,5rem)]">
+      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1rem,6.875vw,16.25rem)] py-[clamp(2.5rem,4.17vw,5rem)]">
+        <div className="mx-auto w-full max-w-[clamp(920px,72.7vw,1396px)]">
         <FadeUp>
           <h2 className="text-h2 max-w-[clamp(20rem,59.64vw,71.5625rem)] leading-[normal] text-white max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
             Safari Lodges India
@@ -28,6 +29,7 @@ export function SafariLanding() {
             />
           </div>
         </FadeUp>
+        </div>
       </div>
     </section>
   );

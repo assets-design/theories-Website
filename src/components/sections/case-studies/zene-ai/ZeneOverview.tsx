@@ -8,8 +8,7 @@ const meta = [
 
 /**
  * Project overview + meta — Figma `2354:918`–`2354:926`
- * Body matches Figma placeholder copy (MOHA); meta corrected for Zene AI
- * (Figma still shows AIRUS / Logo Designing).
+ * Project overview for Zene AI.
  */
 export function ZeneOverview() {
   return (
@@ -19,27 +18,13 @@ export function ZeneOverview() {
           <FadeUp>
             <div className="font-[family-name:var(--font-body)] text-[clamp(0.875rem,0.94vw,1.125rem)] leading-[normal] text-white/80">
               <p>
-                MOHA is a premium lifestyle and fashion brand inspired by
-                timeless Indian elegance and modern minimalism. Designed for
-                those who appreciate refined craftsmanship, MOHA blends
-                heritage-inspired aesthetics with contemporary design to create
-                products that feel effortless, sophisticated, and enduring.
+                Zene AI is an education brand that needed social content which turns curiosity into admissions. The mascot, message, and campaign system had to feel approachable while still sounding smart.
               </p>
               <p className="mt-[clamp(1rem,1.56vw,1.875rem)]">
-                The brand was envisioned to offer more than just beautiful
-                products—it aims to create meaningful experiences through
-                thoughtful design, premium quality, and attention to every
-                detail. From its visual identity to customer touchpoints, every
-                element reflects understated luxury and authenticity.
+                We built Instagram creatives, reels, and campaign frameworks around clear learning benefits and character-led storytelling. Every asset is designed to stop the scroll and move parents or students one step closer to enquiry.
               </p>
               <p className="mt-[clamp(1rem,1.56vw,1.875rem)]">
-                MOHA approached us to build a complete brand ecosystem from the
-                ground up. We crafted the brand strategy, visual identity, logo
-                system, digital presence, and customer experience, ensuring
-                every interaction communicates elegance, trust, and exclusivity.
-                The result is a distinctive premium brand that stands
-                confidently in a competitive market while remaining true to its
-                timeless philosophy.
+                The result is a social system that makes AI-powered education feel human — memorable, consistent, and ready to convert attention into conversations.
               </p>
             </div>
           </FadeUp>

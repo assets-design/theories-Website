@@ -7,7 +7,8 @@ import { FadeUp } from "@/components/motion/FadeUp";
 export function LohithaLanding() {
   return (
     <section aria-label="Lohitha landing page" className="bg-black text-white">
-      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] pt-[clamp(2.5rem,6.25vw,7.5rem)] pb-[clamp(2.5rem,4.17vw,5rem)]">
+      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1rem,6.875vw,16.25rem)] pt-[clamp(2.5rem,6.25vw,7.5rem)] pb-[clamp(2.5rem,4.17vw,5rem)]">
+        <div className="mx-auto w-full max-w-[clamp(920px,72.7vw,1396px)]">
         <FadeUp>
           <h2 className="text-h2 leading-[normal] text-white max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
             Lohitha Landing page
@@ -16,13 +17,7 @@ export function LohithaLanding() {
 
         <FadeUp delay={80}>
           <p className="mt-[clamp(1rem,1.56vw,1.875rem)] max-w-[clamp(40rem,81.15vw,97.375rem)] font-[family-name:var(--font-body)] text-[clamp(0.875rem,0.94vw,1.125rem)] leading-[normal] text-white/80">
-            Creative Chronicles is your gateway to the dynamic world of
-            creativity, design, and innovation. It is more than just a
-            blog—it&apos;s a curated collection of insights, trends, and
-            stories from the forefront of the creative industry. Whether
-            you&apos;re a brand strategist, designer, marketer, or simply a
-            creativity enthusiast, Creative Chronicles offers a fresh
-            perspective on how ideas are transformed into impactful realities.
+            The Lohitha landing experience brings farm-to-family storytelling onto the screen — product clarity, nutritional trust, and a warm visual system that feels local and national at once. Designed for shoppers who decide with both heart and label.
           </p>
         </FadeUp>
 
@@ -37,6 +32,7 @@ export function LohithaLanding() {
             />
           </div>
         </FadeUp>
+        </div>
       </div>
     </section>
   );

@@ -296,7 +296,7 @@ function HorizontalCarousel({
 }
 
 /**
- * Social Media For lohitha — Figma `2173:577` onward (placeholder heading as in Figma).
+ * Social Media For Aircraft — Figma `2173:577` onward.
  * Phone fan AABBs from group `2404:511` (1605×983) @ −29.71°.
  */
 export function AircraftSocial() {
@@ -326,7 +326,7 @@ export function AircraftSocial() {
         <div className="relative z-10 w-full lg:aspect-[1605/983] lg:overflow-visible">
           <FadeUp className="lg:absolute lg:left-0 lg:top-0 lg:z-10">
             <h2 className="text-h2 leading-[normal] text-black max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
-              Social Media For lohitha
+              Social Media For Aircraft
             </h2>
           </FadeUp>
 

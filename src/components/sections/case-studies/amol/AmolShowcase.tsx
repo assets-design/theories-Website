@@ -7,7 +7,8 @@ import { FadeUp } from "@/components/motion/FadeUp";
 export function AmolShowcase() {
   return (
     <section aria-label="Website showcase" className="bg-black text-white">
-      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] pb-[clamp(2.5rem,4.17vw,5rem)]">
+      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1rem,6.875vw,16.25rem)] pb-[clamp(2.5rem,4.17vw,5rem)]">
+        <div className="mx-auto w-full max-w-[clamp(920px,72.7vw,1396px)]">
         <FadeUp>
           <div className="relative mx-auto aspect-[1447/935] w-full max-w-[clamp(40rem,75.36vw,90.4375rem)] overflow-hidden">
             <Image
@@ -19,6 +20,7 @@ export function AmolShowcase() {
             />
           </div>
         </FadeUp>
+        </div>
       </div>
     </section>
   );

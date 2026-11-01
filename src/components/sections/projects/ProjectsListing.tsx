@@ -171,7 +171,7 @@ const projects: Project[] = [
       "SEO",
       "Social Media",
     ],
-    tagBreakBefore: "Social Media",
+    tagsSingleRow: true,
     href: "/projects/aircraft-cloud-pulse",
   },
   {

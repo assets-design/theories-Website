@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useCallback, useEffect, useRef } from "react";
 import { FadeUp } from "@/components/motion/FadeUp";
 
@@ -10,6 +11,8 @@ type FeaturedProject = {
   logo: string;
   logoClassName: string;
   metric: string;
+  /** Dedicated case-study route when one exists. */
+  href?: string;
 };
 
 /**
@@ -59,6 +62,7 @@ const featured: FeaturedProject[] = [
     logo: "/images/featured/mahesh-agencies-logo.svg",
     logoClassName: "h-[clamp(1.5rem,1.77vw,2.125rem)] w-auto max-w-[clamp(7.5rem,10.3vw,12.4rem)]",
     metric: "A 55-year legacy brand with 24 locations, taken digital",
+    href: "/projects/mahesh-agencies",
   },
   {
     name: "Safari Lodges India",
@@ -66,6 +70,7 @@ const featured: FeaturedProject[] = [
     logo: "/images/featured/safari-lodges-logo.svg",
     logoClassName: "h-[clamp(1.5rem,2.08vw,2.5rem)] w-auto max-w-[clamp(6rem,8.2vw,9.8rem)]",
     metric: "Premium safari resort launched on digital",
+    href: "/projects/safari-lodges-india",
   },
   {
     name: "Airus",
@@ -73,6 +78,7 @@ const featured: FeaturedProject[] = [
     logo: "/images/featured/airus-logo.svg",
     logoClassName: "h-[clamp(1.125rem,1.3vw,1.5625rem)] w-auto max-w-[clamp(8rem,11.7vw,14rem)]",
     metric: "Launched in 2026, online and offline",
+    href: "/projects/airus",
   },
   {
     name: "Counting Breaths",
@@ -115,7 +121,10 @@ const featured: FeaturedProject[] = [
 const LOGO_SLOT_H = "h-[clamp(2rem,2.55vw,3.0625rem)]";
 
 function FeaturedProjectCard({ project }: { project: FeaturedProject }) {
-  return (
+  const pointerStart = useRef<{ x: number; y: number } | null>(null);
+  const didDrag = useRef(false);
+
+  const card = (
     <article className="flex w-full flex-col overflow-hidden">
       <div className="relative w-full overflow-hidden aspect-[388/325]">
         <Image
@@ -145,6 +154,32 @@ function FeaturedProjectCard({ project }: { project: FeaturedProject }) {
         </p>
       </div>
     </article>
+  );
+
+  if (!project.href) return card;
+
+  return (
+    <Link
+      href={project.href}
+      aria-label={`View ${project.name} project`}
+      className="block rounded-sm outline-none transition-opacity hover:opacity-95 focus-visible:ring-2 focus-visible:ring-white/50"
+      draggable={false}
+      onPointerDown={(event) => {
+        pointerStart.current = { x: event.clientX, y: event.clientY };
+        didDrag.current = false;
+      }}
+      onPointerMove={(event) => {
+        if (!pointerStart.current) return;
+        const dx = Math.abs(event.clientX - pointerStart.current.x);
+        const dy = Math.abs(event.clientY - pointerStart.current.y);
+        if (dx > 8 || dy > 8) didDrag.current = true;
+      }}
+      onClick={(event) => {
+        if (didDrag.current) event.preventDefault();
+      }}
+    >
+      {card}
+    </Link>
   );
 }
 

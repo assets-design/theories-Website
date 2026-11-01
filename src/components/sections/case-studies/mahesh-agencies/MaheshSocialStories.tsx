@@ -6,8 +6,8 @@ import { FadeUp } from "@/components/motion/FadeUp";
 const CAPTION = {
   handle: "maheshagencies",
   lines: [
-    "From farms to families, 2025 was a year of real impact.",
-    "Thank you for choosing Lohitha. In 2026, we grow stronger.",
+    "Driven by trust. Built for the road ahead.",
+    "Mahesh Agencies — your journey, our commitment.",
   ],
 } as const;
 

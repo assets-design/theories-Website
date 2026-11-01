@@ -226,9 +226,8 @@ function UiCarousel() {
 export function SafariUiShowcase() {
   return (
     <section aria-label="UI design showcase" className="bg-black text-white">
-      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] py-[clamp(2.5rem,4.17vw,5rem)]">
-        {/* w-[64%]: match Amol mosaic scale; absolute Figma AABBs unchanged */}
-        <FadeUp className="relative mx-auto hidden w-[64%] overflow-visible lg:block">
+      <div className="mx-auto w-full max-w-[1920px] px-4 py-[clamp(2.5rem,4.17vw,5rem)] lg:px-[clamp(1rem,6.875vw,16.25rem)]">
+        <FadeUp className="relative mx-auto hidden w-full max-w-[clamp(920px,72.7vw,1396px)] overflow-visible lg:block">
           <div
             className="relative w-full"
             style={{ aspectRatio: `${STAGE_W} / ${STAGE_H}` }}

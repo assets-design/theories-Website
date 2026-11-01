@@ -18,22 +18,10 @@ export function SafariOverview() {
           <FadeUp delay={80}>
             <div className="font-[family-name:var(--font-body)] text-[clamp(0.875rem,0.94vw,1.125rem)] leading-[normal] text-white/80">
               <p>
-                Creative Chronicles is your gateway to the dynamic world of
-                creativity, design, and innovation. It is more than just a
-                blog—it&apos;s a curated collection of insights, trends, and
-                stories from the forefront of the creative industry. Whether
-                you&apos;re a brand strategist, designer, marketer, or simply a
-                creativity enthusiast, Creative Chronicles offers a fresh
-                perspective on how ideas are transformed into impactful
-                realities.
+                Safari Lodges India is a wildlife hospitality brand that needed a digital experience as immersive as the lodges themselves — nature-forward, quiet luxury, and easy booking journeys.
               </p>
               <p className="mt-[clamp(1rem,1.56vw,1.875rem)]">
-                Our mission is to inspire and empower creative minds by sharing
-                real-world case studies, behind-the-scenes looks at
-                groundbreaking projects, and expert opinions on emerging trends.
-                We dive deep into the creative process, exploring everything
-                from conceptual ideation to execution, and reveal the strategies
-                that bring bold visions to life.
+                We designed the website and social system around wilderness atmosphere, lodge discovery, and stay conversion. From wireframes to high-fidelity UI and social creatives, every touchpoint invites guests into the landscape before they arrive.
               </p>
             </div>
           </FadeUp>

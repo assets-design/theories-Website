@@ -1,20 +1,22 @@
 import type { Metadata } from "next";
-import { Services2Cta } from "@/components/sections/services2/Services2Cta";
-import { Services2Hero } from "@/components/sections/services2/Services2Hero";
-import { Services2Stages } from "@/components/sections/services2/Services2Stages";
+import { ServicesCatalog } from "@/components/sections/services/ServicesCatalog";
+import { ServicesCta } from "@/components/sections/services/ServicesCta";
+import { ServicesHero } from "@/components/sections/services/ServicesHero";
+import { ServicesOverview } from "@/components/sections/services/ServicesOverview";
 
 export const metadata: Metadata = {
   title: "Services — Theories Consulting",
   description:
-    "Four stages of work: Shaping, Building, Transforming, and Crafting Theories. Most brands need two or three.",
+    "The work we do at Theories: shaping brands, building products, transforming growth, and crafting content — design that begins where the business does.",
 };
 
 export default function ServicesPage() {
   return (
     <div className="bg-black">
-      <Services2Hero />
-      <Services2Stages />
-      <Services2Cta />
+      <ServicesHero />
+      <ServicesOverview />
+      <ServicesCatalog />
+      <ServicesCta />
     </div>
   );
 }

@@ -24,27 +24,13 @@ export function AirusOverview() {
           <FadeUp delay={80}>
             <div className="font-[family-name:var(--font-body)] text-[clamp(0.875rem,0.94vw,1.125rem)] leading-[normal] text-white/80">
               <p>
-                MOHA is a premium lifestyle and fashion brand inspired by
-                timeless Indian elegance and modern minimalism. Designed for
-                those who appreciate refined craftsmanship, MOHA blends
-                heritage-inspired aesthetics with contemporary design to create
-                products that feel effortless, sophisticated, and enduring.
+                Airus needed a logo system built for product and packaging — a wordmark, droplet mark, and applications that feel clean, fluid, and instantly ownable on shelf and screen.
               </p>
               <p className="mt-[clamp(1rem,1.56vw,1.875rem)]">
-                The brand was envisioned to offer more than just beautiful
-                products—it aims to create meaningful experiences through
-                thoughtful design, premium quality, and attention to every
-                detail. From its visual identity to customer touchpoints, every
-                element reflects understated luxury and authenticity.
+                We designed the mark and brand applications to stay consistent across packaging, product, and digital use. Soft geometry and a clear droplet cue make the brand readable at any size.
               </p>
               <p className="mt-[clamp(1rem,1.56vw,1.875rem)]">
-                MOHA approached us to build a complete brand ecosystem from the
-                ground up. We crafted the brand strategy, visual identity, logo
-                system, digital presence, and customer experience, ensuring
-                every interaction communicates elegance, trust, and exclusivity.
-                The result is a distinctive premium brand that stands
-                confidently in a competitive market while remaining true to its
-                timeless philosophy.
+                The finished system gives Airus a distinctive identity that feels premium, simple, and ready for every customer touchpoint.
               </p>
             </div>
           </FadeUp>

@@ -11,8 +11,8 @@ import { FadeUp } from "@/components/motion/FadeUp";
  */
 
 const CAPTION_LINES = [
-  "From farms to families, 2025 was a year of real impact.",
-  "Thank you for choosing Lohitha. In 2026, we grow stronger.",
+  "Clarity before growth. Always.",
+  "How To — frameworks that turn confusion into action.",
 ] as const;
 
 const insightPosts = [
@@ -314,7 +314,7 @@ export function HowtoSocial() {
         <div className="relative z-10 w-full lg:aspect-[1680/1256] lg:overflow-visible">
           <FadeUp className="lg:absolute lg:left-0 lg:top-0 lg:z-10">
             <h2 className="text-h2 leading-[normal] text-black max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
-              Social Media For lohitha
+              Social Media For How To
             </h2>
           </FadeUp>
 

@@ -161,46 +161,53 @@ function PhoneCarousel() {
 export function HowtoLanding() {
   return (
     <section aria-label="How To UI and web design" className="bg-black text-white">
-      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] py-[clamp(2.5rem,4.17vw,5rem)]">
-        <FadeUp>
-          {/* Exact Figma characters — placeholder brand name flagged in summary */}
-          <h2 className="text-h2 max-w-[clamp(20rem,59.64vw,71.5625rem)] leading-[normal] text-white max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
-            Safari Lodges India
-            <br className="hidden sm:block" />
-            <span className="sm:hidden"> </span>
-            UI/UX Design &amp; Web Development
-          </h2>
-        </FadeUp>
+      <div className="mx-auto w-full max-w-[1920px] px-4 py-[clamp(2.5rem,4.17vw,5rem)] lg:px-[clamp(1rem,6.875vw,16.25rem)]">
+        <div className="mx-auto w-full max-w-[clamp(920px,72.7vw,1396px)]">
+          <FadeUp>
+            <h2 className="text-h2 max-w-[clamp(20rem,59.64vw,71.5625rem)] leading-[normal] text-white max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
+              How To
+              <br className="hidden sm:block" />
+              <span className="sm:hidden"> </span>
+              Brand Identity &amp; Social Design
+            </h2>
+          </FadeUp>
 
-        <FadeUp delay={120}>
-          {/* Figma 2263:1112 — 1680×914; clean alpha, no rectangular shadow */}
-          <div className="relative mt-[clamp(1.5rem,3.125vw,3.75rem)] aspect-[1680/914] w-full max-lg:aspect-[16/10]">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/case-studies/howto/landing-laptop-clean.png"
-              alt="howTo. website shown on a laptop device"
-              className="absolute inset-0 size-full object-contain object-center"
-              draggable={false}
-            />
-          </div>
-        </FadeUp>
-
-        {/* Phones — Figma 2255:1016–1026; w-[64%] matches Amol mosaic scale */}
-        <div className="mx-auto mt-[clamp(1.5rem,4.17vw,5rem)] hidden w-[64%] items-stretch gap-[clamp(1rem,4.48vw,5.375rem)] lg:grid lg:grid-cols-[367fr_332fr_332fr_365fr]">
-          {phones.map((phone, index) => (
-            <FadeUp key={phone.src} delay={index * 40} className="h-full">
-              <PhoneCard
-                src={phone.src}
-                alt={phone.alt}
-                aspect={phone.desktopAspect}
+          <FadeUp delay={120}>
+            {/* Figma 2263:1112 — 1680×914; clean alpha, no rectangular shadow */}
+            <div className="relative mt-[clamp(1.5rem,3.125vw,3.75rem)] aspect-[1680/914] w-full max-lg:aspect-[16/10]">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/case-studies/howto/landing-laptop-clean.png"
+                alt="howTo. website shown on a laptop device"
+                className="absolute inset-0 size-full object-contain object-center"
+                draggable={false}
               />
-            </FadeUp>
-          ))}
-        </div>
+            </div>
+          </FadeUp>
 
-        <FadeUp delay={80} className="mt-[clamp(1.5rem,4vw,3rem)]">
-          <PhoneCarousel />
-        </FadeUp>
+          {/* Proportional cols (367/332/332/365 @ h=727) → equal height, full frames */}
+          <div
+            className="mt-[clamp(1.5rem,4.17vw,5rem)] hidden items-start gap-[clamp(1rem,4.48vw,5.375rem)] lg:grid"
+            style={{
+              gridTemplateColumns:
+                "minmax(0, 0.5048fr) minmax(0, 0.4567fr) minmax(0, 0.4567fr) minmax(0, 0.5021fr)",
+            }}
+          >
+            {phones.map((phone, index) => (
+              <FadeUp key={phone.src} delay={index * 40}>
+                <PhoneCard
+                  src={phone.src}
+                  alt={phone.alt}
+                  aspect={phone.desktopAspect}
+                />
+              </FadeUp>
+            ))}
+          </div>
+
+          <FadeUp delay={80} className="mt-[clamp(1.5rem,4vw,3rem)]">
+            <PhoneCarousel />
+          </FadeUp>
+        </div>
       </div>
     </section>
   );

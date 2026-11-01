@@ -36,22 +36,10 @@ export function LohithaHero() {
           <FadeUp immediate delay={80}>
             <div className="font-[family-name:var(--font-body)] text-[clamp(0.875rem,0.94vw,1.125rem)] leading-[normal] text-white/80">
               <p>
-                Creative Chronicles is your gateway to the dynamic world of
-                creativity, design, and innovation. It is more than just a
-                blog—it&apos;s a curated collection of insights, trends, and
-                stories from the forefront of the creative industry. Whether
-                you&apos;re a brand strategist, designer, marketer, or simply a
-                creativity enthusiast, Creative Chronicles offers a fresh
-                perspective on how ideas are transformed into impactful
-                realities.
+                Lohitha Foods is a trusted local name ready for national shelf presence. The brand needed packaging-led storytelling and a digital reach that could compete beyond the neighbourhood aisle.
               </p>
               <p className="mt-[1.125rem]">
-                Our mission is to inspire and empower creative minds by sharing
-                real-world case studies, behind-the-scenes looks at
-                groundbreaking projects, and expert opinions on emerging trends.
-                We dive deep into the creative process, exploring everything
-                from conceptual ideation to execution, and reveal the strategies
-                that bring bold visions to life.
+                We built the website, social system, and WhatsApp commerce touchpoints around everyday food rituals — fortified rice, atta, and festive campaigns — so every post and page feels familiar, honest, and ready to scale.
               </p>
             </div>
           </FadeUp>

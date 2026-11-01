@@ -23,22 +23,10 @@ export function RpplOverview() {
           <FadeUp delay={80}>
             <div className="font-[family-name:var(--font-body)] text-[clamp(0.875rem,0.94vw,1.125rem)] leading-[normal] text-white/80">
               <p>
-                Creative Chronicles is your gateway to the dynamic world of
-                creativity, design, and innovation. It is more than just a
-                blog—it&apos;s a curated collection of insights, trends, and
-                stories from the forefront of the creative industry. Whether
-                you&apos;re a brand strategist, designer, marketer, or simply a
-                creativity enthusiast, Creative Chronicles offers a fresh
-                perspective on how ideas are transformed into impactful
-                realities.
+                RPPL Motor Racing brings track-level ambition into a digital identity. The brief was to make the brand feel as precise and competitive as the cars themselves — clear, fast, and impossible to ignore.
               </p>
               <p className="mt-[clamp(1rem,1.56vw,1.875rem)]">
-                Our mission is to inspire and empower creative minds by sharing
-                real-world case studies, behind-the-scenes looks at
-                groundbreaking projects, and expert opinions on emerging trends.
-                We dive deep into the creative process, exploring everything
-                from conceptual ideation to execution, and reveal the strategies
-                that bring bold visions to life.
+                We designed and developed a web experience that translates motorsport energy into UI: bold hierarchy, race-ready storytelling, and a system built for updates as the season moves. Every screen reinforces speed, craft, and team pride.
               </p>
             </div>
           </FadeUp>

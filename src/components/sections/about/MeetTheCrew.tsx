@@ -43,11 +43,6 @@ const LEADERSHIP: LeadershipMember[] = [
 
 const TEAM: TeamMember[] = [
   {
-    name: "Lakshmi Sathivk",
-    role: "HR & Social Media",
-    image: "/images/about/crew/lakshmi-sathivk.png",
-  },
-  {
     name: "Rohith Rayudu",
     role: "Social Media Manager",
     image: "/images/about/crew/rohith-rayudu.png",

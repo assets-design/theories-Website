@@ -1,14 +1,14 @@
 import { FadeUp } from "@/components/motion/FadeUp";
 
 const meta = [
-  { label: "Project Name", value: "AIRUS" },
-  { label: "TimeFrame", value: "2026" },
-  { label: "Role", value: "Logo Designing" },
+  { label: "Project Name", value: "Eswap.in" },
+  { label: "TimeFrame", value: "2025" },
+  { label: "Role", value: "UI/UX Design & App Development" },
 ] as const;
 
 /**
  * Hero title + overview + meta — Figma `2328:502` text layers.
- * Copy matches Figma `.characters` exactly (MOHA / AIRUS placeholders).
+ * Hero title + overview + meta for Eswap.in.
  */
 export function EswapHero() {
   return (
@@ -16,7 +16,7 @@ export function EswapHero() {
       <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] pt-[clamp(7.5rem,13.75vw,16.5rem)] pb-[clamp(2.5rem,4.17vw,5rem)]">
         <FadeUp immediate y={28}>
           <h1 className="text-h2 max-w-[clamp(18rem,44.27vw,53.125rem)] leading-[normal] text-white max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
-            600+&nbsp;Admissions in 3 Months.
+            Ticket Resale, Built for Speed.
           </h1>
         </FadeUp>
 
@@ -24,27 +24,13 @@ export function EswapHero() {
           <FadeUp immediate delay={80}>
             <div className="font-[family-name:var(--font-body)] text-[clamp(0.875rem,0.94vw,1.125rem)] leading-[normal] text-white/80">
               <p>
-                MOHA is a premium lifestyle and fashion brand inspired by
-                timeless Indian elegance and modern minimalism. Designed for
-                those who appreciate refined craftsmanship, MOHA blends
-                heritage-inspired aesthetics with contemporary design to create
-                products that feel effortless, sophisticated, and enduring.
+                Eswap.in is a ticket resale platform that needed a seamless mobile experience and campaigns that drive real downloads. Buyers and sellers had to move fast without friction or doubt.
               </p>
               <p className="mt-[clamp(1rem,1.56vw,1.875rem)]">
-                The brand was envisioned to offer more than just beautiful
-                products—it aims to create meaningful experiences through
-                thoughtful design, premium quality, and attention to every
-                detail. From its visual identity to customer touchpoints, every
-                element reflects understated luxury and authenticity.
+                We designed the app UI/UX, brand touchpoints, and social system around clarity and trust — listings, checkout flows, and creatives that make resale feel safe and simple.
               </p>
               <p className="mt-[clamp(1rem,1.56vw,1.875rem)]">
-                MOHA approached us to build a complete brand ecosystem from the
-                ground up. We crafted the brand strategy, visual identity, logo
-                system, digital presence, and customer experience, ensuring
-                every interaction communicates elegance, trust, and exclusivity.
-                The result is a distinctive premium brand that stands
-                confidently in a competitive market while remaining true to its
-                timeless philosophy.
+                The result is a product and campaign ecosystem built for high-intent users: fewer steps, stronger confidence, and a brand that looks as reliable as the tickets people trade.
               </p>
             </div>
           </FadeUp>

@@ -170,9 +170,8 @@ const rows = rawRows.map(normalizeRow);
 function PhoneRowStage({ row }: { row: PhoneRow }) {
   return (
     <>
-      {/* w-[64%]: match Amol mosaic scale; absolute Figma AABBs unchanged */}
       <div
-        className="relative mx-auto hidden w-[64%] lg:block"
+        className="relative mx-auto hidden w-full max-w-[clamp(920px,72.7vw,1396px)] lg:block"
         style={{ aspectRatio: `${row.stageW} / ${row.stageH}` }}
       >
         {row.phones.map((phone) => (
@@ -190,7 +189,7 @@ function PhoneRowStage({ row }: { row: PhoneRow }) {
             <img
               src={phone.src}
               alt={phone.alt}
-              className="absolute inset-0 size-full object-contain object-top"
+              className="absolute inset-0 size-full object-contain object-center"
               draggable={false}
             />
           </div>
@@ -220,9 +219,9 @@ function PhoneRowStage({ row }: { row: PhoneRow }) {
 export function EswapUiExplore() {
   return (
     <section aria-label="Eswap app screens" className="bg-black text-white">
-      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] py-[clamp(2.5rem,4.17vw,5rem)]">
+      <div className="mx-auto w-full max-w-[1920px] px-4 py-[clamp(2.5rem,4.17vw,5rem)] lg:px-[clamp(1rem,6.875vw,16.25rem)]">
         <FadeUp>
-          <h2 className="text-h2 max-w-[clamp(18rem,44.27vw,53.125rem)] leading-[normal] text-white max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
+          <h2 className="text-h2 mx-auto w-full max-w-[clamp(920px,72.7vw,1396px)] leading-[normal] text-white max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
             Let’s Start Exploring what we have Built.
           </h2>
         </FadeUp>

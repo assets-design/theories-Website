@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FadeUp } from "@/components/motion/FadeUp";
 
 /** Homepage / contact-form service offerings (four stages). */
@@ -5,6 +6,7 @@ export const HOMEPAGE_SERVICES = [
   {
     number: "01",
     title: "Shaping Theories",
+    href: "/services#shaping",
     description:
       "Before anything gets made, it gets decided. Brand naming, identity, positioning and strategy, the thinking that makes every later choice easier.",
     icon: "/images/icons/service-shaping.png",
@@ -12,6 +14,7 @@ export const HOMEPAGE_SERVICES = [
   {
     number: "02",
     title: "Building Theories",
+    href: "/services#building",
     description:
       "Websites, apps and platforms that load fast and convert honestly. Design and development in one room, so nothing gets lost in handoff.",
     icon: "/images/icons/service-building.png",
@@ -19,6 +22,7 @@ export const HOMEPAGE_SERVICES = [
   {
     number: "03",
     title: "Transforming Theories",
+    href: "/services#transforming",
     description:
       "Performance marketing, SEO, social and AI automation. Systems that compound instead of campaigns that expire.",
     icon: "/images/icons/service-transforming.png",
@@ -26,6 +30,7 @@ export const HOMEPAGE_SERVICES = [
   {
     number: "04",
     title: "Crafting Theories",
+    href: "/services#crafting",
     description:
       "Films, content and campaign creative. Ideas made for where they'll actually be watched, not where they'll be presented.",
     icon: "/images/icons/service-crafting.png",
@@ -91,7 +96,12 @@ export function Services() {
                       />
                     </span>
                     <h3 className="font-[family-name:var(--font-display)] text-[1.75rem] font-normal leading-none">
-                      {service.title}
+                      <Link
+                        href={service.href}
+                        className="transition-opacity hover:opacity-80"
+                      >
+                        {service.title}
+                      </Link>
                     </h3>
                   </div>
                   <p className="font-[family-name:var(--font-body)] text-[15px] font-normal leading-[1.445]">
@@ -117,7 +127,12 @@ export function Services() {
                   </span>
 
                   <h3 className="absolute top-1/2 left-[25.357%] -translate-y-1/2 font-[family-name:var(--font-display)] text-[clamp(1.75rem,2.604vw,3.125rem)] font-normal leading-none whitespace-nowrap">
-                    {service.title}
+                    <Link
+                      href={service.href}
+                      className="transition-opacity hover:opacity-80"
+                    >
+                      {service.title}
+                    </Link>
                   </h3>
 
                   <p className="absolute top-1/2 left-[61.548%] w-[32.917%] -translate-y-1/2 font-[family-name:var(--font-body)] text-[clamp(0.8125rem,0.9375vw,18px)] font-normal leading-[1.445]">

@@ -3,12 +3,12 @@
 import Image from "next/image";
 import { FadeUp } from "@/components/motion/FadeUp";
 
-/** Exact Figma caption on reel cards (Lohitha placeholder). */
+/** Instagram reel caption. */
 const INSTAGRAM_CAPTION = {
   handle: "zykaz.studio",
   lines: [
-    "From farms to families, 2025 was a year of real impact.",
-    "Thank you for choosing Lohitha. In 2026, we grow stronger.",
+    "New drops. New looks. Same energy.",
+    "Zykaz — wear what feels like you. Next season starts now.",
   ],
 } as const;
 
@@ -116,7 +116,7 @@ function InstagramReelCard({ src, label }: { src: string; label: string }) {
 }
 
 /**
- * Social Media For lohitha — Figma `2370:1268` + groups `2381:568`–`2381:582`
+ * Social Media For Zykaz — Figma `2370:1268` + groups `2381:568`–`2381:582`
  * Group exports at scale 2 from Figma (natural alpha).
  * Heading matches Figma `.characters` (Lohitha placeholder).
  */
@@ -126,7 +126,7 @@ export function ZykazSocial() {
       <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] pt-[clamp(2rem,4.167vw,5rem)] pb-[clamp(2.5rem,5.2vw,6.25rem)]">
         <FadeUp>
           <h2 className="text-h2 leading-[normal] text-black max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
-            Social Media For lohitha
+            Social Media For Zykaz
           </h2>
         </FadeUp>
 

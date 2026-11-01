@@ -83,10 +83,13 @@ export function ServiceStageSection({ stage }: ServiceStageSectionProps) {
           </FadeUp>
 
           <FadeUp delay={140}>
-            <ul className="mt-[clamp(1.25rem,2vw,2.5rem)] grid grid-cols-1 gap-x-[clamp(1rem,2vw,2.5rem)] gap-y-[clamp(1.25rem,2vw,2.5rem)] sm:grid-cols-2">
+            <ul className="mt-[clamp(1.25rem,2vw,2.5rem)] grid grid-cols-1 gap-x-[clamp(1rem,2vw,2.5rem)] gap-y-[clamp(1.25rem,2.25vw,2.75rem)] sm:grid-cols-2">
               {stage.capabilities.map((cap) => (
-                <li key={cap.title} className="min-w-0">
-                  <p className="font-[family-name:var(--font-body)] text-[clamp(1rem,1.3vw,1.5625rem)] font-semibold leading-[normal] text-white">
+                <li
+                  key={cap.title}
+                  className="min-w-0 border-t border-white/15 pt-[clamp(0.875rem,1.25vw,1.25rem)]"
+                >
+                  <p className="font-[family-name:var(--font-body)] text-[clamp(1rem,1.15vw,1.375rem)] font-semibold leading-[normal] text-white">
                     {cap.title}
                   </p>
                   <p className="mt-2 font-[family-name:var(--font-body)] text-[clamp(0.8125rem,0.83vw,1rem)] font-normal leading-[1.45] text-white/70">

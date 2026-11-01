@@ -8,8 +8,7 @@ const meta = [
 
 /**
  * Project overview + meta — Figma `2173:555`–`2173:564`
- * Body copy is Figma placeholder (“Creative Chronicles”).
- * Meta Project Name corrected from leftover “JCN Consulting”.
+ * Project overview body + meta for Aircraft Cloud & Aircraft Pulse.
  */
 export function AircraftOverview() {
   return (
@@ -19,22 +18,10 @@ export function AircraftOverview() {
           <FadeUp delay={80}>
             <div className="font-[family-name:var(--font-body)] text-[clamp(0.875rem,0.94vw,1.125rem)] leading-[normal] text-white/80">
               <p>
-                Creative Chronicles is your gateway to the dynamic world of
-                creativity, design, and innovation. It is more than just a
-                blog—it&apos;s a curated collection of insights, trends, and
-                stories from the forefront of the creative industry. Whether
-                you&apos;re a brand strategist, designer, marketer, or simply a
-                creativity enthusiast, Creative Chronicles offers a fresh
-                perspective on how ideas are transformed into impactful
-                realities.
+                Aircraft Cloud and Aircraft Pulse are two products under one coherent software brand. The challenge was to make complex aviation technology feel obvious — shared language, clear positioning, and interfaces people can trust.
               </p>
               <p className="mt-[clamp(1rem,1.56vw,1.875rem)]">
-                Our mission is to inspire and empower creative minds by sharing
-                real-world case studies, behind-the-scenes looks at
-                groundbreaking projects, and expert opinions on emerging trends.
-                We dive deep into the creative process, exploring everything
-                from conceptual ideation to execution, and reveal the strategies
-                that bring bold visions to life.
+                We shaped the brand system and digital experience across both products: UI/UX, web development, SEO, and social. The result is a unified presence where product depth never gets in the way of clarity.
               </p>
             </div>
           </FadeUp>

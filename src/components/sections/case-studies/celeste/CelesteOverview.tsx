@@ -3,12 +3,12 @@ import { FadeUp } from "@/components/motion/FadeUp";
 const meta = [
   { label: "Project Name", value: "Celeste" },
   { label: "TimeFrame", value: "2026" },
-  { label: "Role", value: "Performance Marketing" },
+  { label: "Role", value: "Web, Social & Performance Marketing" },
 ] as const;
 
 /**
  * Project overview + meta — Figma `2281:1726`–`2281:1734`
- * Body matches Figma placeholder copy; meta corrected for Celeste (Figma still shows AIRUS).
+ * Project overview for Celeste.
  */
 export function CelesteOverview() {
   return (
@@ -18,27 +18,13 @@ export function CelesteOverview() {
           <FadeUp>
             <div className="font-[family-name:var(--font-body)] text-[clamp(0.875rem,0.94vw,1.125rem)] leading-[normal] text-white/80">
               <p>
-                MOHA is a premium lifestyle and fashion brand inspired by
-                timeless Indian elegance and modern minimalism. Designed for
-                those who appreciate refined craftsmanship, MOHA blends
-                heritage-inspired aesthetics with contemporary design to create
-                products that feel effortless, sophisticated, and enduring.
+                Celeste International Schools serves parents who compare carefully before they commit. The digital front door had to feel trustworthy, modern, and clear about what makes Celeste different.
               </p>
               <p className="mt-[clamp(1rem,1.56vw,1.875rem)]">
-                The brand was envisioned to offer more than just beautiful
-                products—it aims to create meaningful experiences through
-                thoughtful design, premium quality, and attention to every
-                detail. From its visual identity to customer touchpoints, every
-                element reflects understated luxury and authenticity.
+                We built social, performance marketing, SEO, UI/UX, and web development around admissions outcomes — proof, clarity, and campaigns that turn interest into enrolled students.
               </p>
               <p className="mt-[clamp(1rem,1.56vw,1.875rem)]">
-                MOHA approached us to build a complete brand ecosystem from the
-                ground up. We crafted the brand strategy, visual identity, logo
-                system, digital presence, and customer experience, ensuring
-                every interaction communicates elegance, trust, and exclusivity.
-                The result is a distinctive premium brand that stands
-                confidently in a competitive market while remaining true to its
-                timeless philosophy.
+                In three months the system helped drive 600+ admissions, with creatives and landing experiences working as one pipeline from awareness to confirmation.
               </p>
             </div>
           </FadeUp>

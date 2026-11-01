@@ -27,8 +27,8 @@ const uiPhones = [
 export function MaheshUiPhones() {
   return (
     <section aria-label="Mahesh Agencies mobile UI" className="bg-black">
-      <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] pb-[clamp(2.5rem,4.17vw,5rem)]">
-        <FadeUp className="relative mx-auto hidden aspect-[1681/735] w-[64%] lg:block">
+      <div className="mx-auto w-full max-w-[1920px] px-4 pb-[clamp(2.5rem,4.17vw,5rem)] lg:px-[clamp(1rem,6.875vw,16.25rem)]">
+        <FadeUp className="relative mx-auto hidden aspect-[1681/735] w-full max-w-[clamp(920px,72.7vw,1396px)] lg:block">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/case-studies/mahesh-agencies/ui-phones-row-figma.png"

@@ -410,7 +410,7 @@ function InstagramReelCard({ src, label }: { src: string; label: string }) {
 }
 
 /**
- * Social Media For lohitha — Figma `2062:1266`–`2170:550`
+ * Social Media For Safari Lodges India — Figma `2062:1266`–`2170:550`
  * Figma heading still reads “lohitha”; kept exact to the layer text.
  */
 export function SafariSocial() {
@@ -449,7 +449,7 @@ export function SafariSocial() {
         <div className="relative z-10 w-full lg:aspect-[1680/1421] lg:overflow-visible">
           <FadeUp className="lg:absolute lg:left-0 lg:top-0 lg:z-10">
             <h2 className="text-h2 leading-[normal] text-black max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
-              Social Media For lohitha
+              Social Media For Safari Lodges India
             </h2>
           </FadeUp>
 

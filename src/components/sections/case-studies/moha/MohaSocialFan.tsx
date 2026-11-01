@@ -27,7 +27,7 @@ export function MohaSocialFan() {
         <div className="relative z-10 w-full lg:aspect-[1920/1176] lg:overflow-visible">
           <FadeUp className="lg:absolute lg:left-0 lg:top-0 lg:z-10">
             <h2 className="text-h2 leading-[1.1875] text-black max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
-              Social Media For lohitha
+              Social Media For MOHA
             </h2>
           </FadeUp>
 

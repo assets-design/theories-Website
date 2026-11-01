@@ -11,7 +11,7 @@ export function CelesteSocial() {
       <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] pt-[clamp(2rem,4.167vw,5rem)] pb-[clamp(2.5rem,5.2vw,6.25rem)]">
         <FadeUp>
           <h2 className="text-h2 leading-[1.1875] text-black max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
-            Social Media For lohitha
+            Social Media For Celeste
           </h2>
         </FadeUp>
 

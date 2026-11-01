@@ -24,27 +24,13 @@ export function DcasaOverview() {
           <FadeUp delay={80}>
             <div className="font-[family-name:var(--font-body)] text-[clamp(0.875rem,0.94vw,1.125rem)] leading-[normal] text-white/80">
               <p>
-                MOHA is a premium lifestyle and fashion brand inspired by
-                timeless Indian elegance and modern minimalism. Designed for
-                those who appreciate refined craftsmanship, MOHA blends
-                heritage-inspired aesthetics with contemporary design to create
-                products that feel effortless, sophisticated, and enduring.
+                D'CASA Suites needed a logo system that signals hospitality with quiet confidence — monogram, wordmark, and applications that feel premium on stationery and signage.
               </p>
               <p className="mt-[clamp(1rem,1.56vw,1.875rem)]">
-                The brand was envisioned to offer more than just beautiful
-                products—it aims to create meaningful experiences through
-                thoughtful design, premium quality, and attention to every
-                detail. From its visual identity to customer touchpoints, every
-                element reflects understated luxury and authenticity.
+                We designed a mark and brand kit that travels cleanly from letterhead to façade. Every application reinforces comfort, care, and a sense of place guests remember.
               </p>
               <p className="mt-[clamp(1rem,1.56vw,1.875rem)]">
-                MOHA approached us to build a complete brand ecosystem from the
-                ground up. We crafted the brand strategy, visual identity, logo
-                system, digital presence, and customer experience, ensuring
-                every interaction communicates elegance, trust, and exclusivity.
-                The result is a distinctive premium brand that stands
-                confidently in a competitive market while remaining true to its
-                timeless philosophy.
+                The identity positions D'CASA as a suite experience that looks as considered as the stay itself.
               </p>
             </div>
           </FadeUp>

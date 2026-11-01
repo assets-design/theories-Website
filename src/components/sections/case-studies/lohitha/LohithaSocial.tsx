@@ -357,7 +357,7 @@ const instagramReels = [
 ] as const;
 
 /**
- * Social Media For lohitha — Figma `2195:533` (heading+fan+feed) onward.
+ * Social Media For Lohitha — Figma `2195:533` (heading+fan+feed) onward.
  * Hero fan positions are % of group `2195:527` using rotated AABBs.
  */
 export function LohithaSocial() {
@@ -413,7 +413,7 @@ export function LohithaSocial() {
         <div className="relative z-10 w-full lg:aspect-[1678/1081] lg:overflow-visible">
           <FadeUp className="lg:absolute lg:left-0 lg:top-0 lg:z-10">
             <h2 className="text-h2 leading-[normal] text-black max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
-              Social Media For lohitha
+              Social Media For Lohitha
             </h2>
           </FadeUp>
 

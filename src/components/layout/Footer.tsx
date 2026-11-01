@@ -263,6 +263,12 @@ export function Footer() {
           <p className="text-label !text-white">©2026 Theories Consulting</p>
           <div className="flex flex-wrap gap-[clamp(1.5rem,4.17vw,5rem)]">
             <ScrollLink
+              href="/services"
+              className="text-label !text-white transition-opacity hover:opacity-80"
+            >
+              Services
+            </ScrollLink>
+            <ScrollLink
               href="/careers"
               className="text-label !text-white transition-opacity hover:opacity-80"
             >

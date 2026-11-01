@@ -8,7 +8,7 @@ const meta = [
 
 /**
  * Project overview + meta — Figma `2239:805`–`2239:813`
- * Body copy is exact Figma characters (currently MOHA placeholder in the file).
+ * Project overview for How To.
  */
 export function HowtoOverview() {
   return (
@@ -24,27 +24,13 @@ export function HowtoOverview() {
           <FadeUp delay={80}>
             <div className="font-[family-name:var(--font-body)] text-[clamp(0.875rem,0.94vw,1.125rem)] leading-[normal] text-white/80">
               <p>
-                MOHA is a premium lifestyle and fashion brand inspired by
-                timeless Indian elegance and modern minimalism. Designed for
-                those who appreciate refined craftsmanship, MOHA blends
-                heritage-inspired aesthetics with contemporary design to create
-                products that feel effortless, sophisticated, and enduring.
+                How To needed an identity system that felt instantly familiar and impossible to confuse — clear, memorable, and ready for brochure and social use from day one.
               </p>
               <p className="mt-[clamp(1rem,1.56vw,1.875rem)]">
-                The brand was envisioned to offer more than just beautiful
-                products—it aims to create meaningful experiences through
-                thoughtful design, premium quality, and attention to every
-                detail. From its visual identity to customer touchpoints, every
-                element reflects understated luxury and authenticity.
+                We built the logo, brand identity, brochure system, and social design language around clarity-first messaging. The visual system makes complex ideas feel simple without watering them down.
               </p>
               <p className="mt-[clamp(1rem,1.56vw,1.875rem)]">
-                MOHA approached us to build a complete brand ecosystem from the
-                ground up. We crafted the brand strategy, visual identity, logo
-                system, digital presence, and customer experience, ensuring
-                every interaction communicates elegance, trust, and exclusivity.
-                The result is a distinctive premium brand that stands
-                confidently in a competitive market while remaining true to its
-                timeless philosophy.
+                The result is a brand toolkit that works across print and digital — consistent, distinctive, and easy for teams to apply.
               </p>
             </div>
           </FadeUp>

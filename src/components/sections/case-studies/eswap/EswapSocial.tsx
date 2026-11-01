@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState, type ReactNode } from "react"
 import { FadeUp } from "@/components/motion/FadeUp";
 
 /**
- * Social Media For lohitha — Figma `2349:805`.
+ * Social Media For Eswap — Figma `2349:805`.
  * Complex rotated / overlapping groups use Figma group composites at 2x (v3)
  * with gentle AABB black→alpha (fan, weekend, stranger, halloween, posts).
  * Reels: VIDEO fills on `2349:758` / `2349:768` / `2349:778` (group `2349:755`).
@@ -17,8 +17,8 @@ const FAN_DROP =
 const REEL_CAPTION = {
   handle: "eswap.in",
   lines: [
-    "From farms to families, 2025 was a year of real impact.",
-    "Thank you for choosing Lohitha. In 2026, we grow stronger.",
+    "Sold out? Not anymore.",
+    "Eswap.in — resell tickets fast, buy with confidence.",
   ],
 } as const;
 
@@ -384,7 +384,7 @@ export function EswapSocial() {
       <div className="mx-auto w-full max-w-[1920px] px-4 lg:px-[clamp(1.25rem,6.25vw,7.5rem)] py-[clamp(2.5rem,4.17vw,5rem)]">
         <FadeUp>
           <h2 className="text-h2 max-w-[clamp(16rem,36.56vw,43.875rem)] leading-[normal] text-black max-md:!text-[38px] md:max-lg:!text-[2.625rem]">
-            Social Media For lohitha
+            Social Media For Eswap
           </h2>
         </FadeUp>
 
